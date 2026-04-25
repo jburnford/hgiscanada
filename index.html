@@ -3,53 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HGIS Canada — Census Subdivisions, 1851–1921</title>
-<meta name="description" content="A page-per-place historical knowledge graph for Canadian Census Subdivisions, with Wikidata grounding, cross-year continuity, and structured data for chatbot RAG.">
+<title>HGIS Canada Knowledge Graph — Census Subdivisions, 1851–1921</title>
+<meta name="description" content="An academic knowledge graph of Canadian Census Subdivisions across the 1851–1921 censuses, building on the Canadian Peoples / TCP project. Per-place prose summaries, Wikidata grounding, cross-year boundary continuity, full census record, and structured data.">
 <link rel="canonical" href="https://jimclifford.ca/hgiscanada/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="HGIS Canada — Census Subdivisions, 1851–1921">
-<meta property="og:description" content="A page-per-place historical knowledge graph for Canadian Census Subdivisions, with Wikidata grounding, cross-year continuity, and structured data for chatbot RAG.">
+<meta property="og:title" content="HGIS Canada Knowledge Graph — Census Subdivisions, 1851–1921">
+<meta property="og:description" content="Academic knowledge graph of Canadian Census Subdivisions, 1851–1921. Built on the Canadian Peoples / TCP project at hgiscanada.usask.ca.">
 
 <style>
-  body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 760px;
-         margin: 2em auto; padding: 0 1em; line-height: 1.55; color: #222; }
-  h1 { border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
-  h2 { margin-top: 1.6em; }
+  body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 780px;
+         margin: 2em auto; padding: 0 1em; line-height: 1.6; color: #222; }
+  h1 { border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.3em; }
+  .tagline { font-size: 1.05em; color: #555; margin-top: 0; }
+  h2 { margin-top: 1.8em; }
   a { color: #0055aa; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+              gap: 0.5em 1em; margin: 0.8em 0; }
+  .card-grid a { padding: 0.45em 0.7em; border: 1px solid #ddd; border-radius: 4px;
+              text-decoration: none; color: #0055aa; background: #fafbfc; }
+  .card-grid a:hover { background: #e8f1fb; }
+  .card-grid .count { color: #888; font-size: 0.85em; }
   table { border-collapse: collapse; margin: 0.5em 0; }
   th, td { border: 1px solid #ddd; padding: 4px 12px; text-align: right; }
   th:first-child, td:first-child { text-align: left; }
-  footer { margin-top: 3em; font-size: 0.8em; color: #666;
+  blockquote { border-left: 3px solid #ccc; margin: 1em 0; padding: 0.2em 0 0.2em 1em;
+              color: #555; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #666;
            border-top: 1px solid #ddd; padding-top: 1em; }
 </style>
 </head>
 <body>
 <article>
-<h1>Canadian Census Subdivisions, 1851–1921</h1>
+<h1>HGIS Canada Knowledge Graph</h1>
+<p class="tagline">Canadian Census Subdivisions, 1851–1921 — every place, every census, the full record.</p>
 
-<p>This site publishes one page per Canadian Census Subdivision per census year, plus
-an aggregate page per persistent place, drawn from the Canadian Peoples / TCP boundary
-files and tabulations. Each page combines:</p>
+<p>An academic knowledge graph of Canadian historical Census Subdivisions, designed for both human
+researchers and machine readers (search engines, AI assistants, citation-grounded RAG). This site
+publishes one page per Census Subdivision per census year, plus an aggregate page per persistent
+place across all eight censuses, drawn from the
+<a href="https://borealisdata.ca/dataverse/canadiansubdivisions">Canadian Peoples / TCP</a>
+boundary files and census tabulations.</p>
 
+<p>Built on the work of the <strong>HGIS Lab</strong> at the University of Saskatchewan and the
+<a href="https://hgiscanada.usask.ca/">hgiscanada.usask.ca</a> project, which provides the
+underlying georeferenced boundary polygons and census-table transcriptions. This site reorganises
+those data as a queryable knowledge graph and a browseable web of per-place prose pages.</p>
+
+<h2>Browse by province</h2>
+<div class="card-grid">
+<a href="/hgiscanada/places/ab/">Alberta <span class="count">(667)</span></a>
+<a href="/hgiscanada/places/bc/">British Columbia <span class="count">(222)</span></a>
+<a href="/hgiscanada/places/mb/">Manitoba <span class="count">(518)</span></a>
+<a href="/hgiscanada/places/nb/">New Brunswick <span class="count">(325)</span></a>
+<a href="/hgiscanada/places/nl/">Newfoundland and Labrador <span class="count">(3)</span></a>
+<a href="/hgiscanada/places/nt/">Northwest Territories <span class="count">(438)</span></a>
+<a href="/hgiscanada/places/ns/">Nova Scotia <span class="count">(1,171)</span></a>
+<a href="/hgiscanada/places/on/">Ontario <span class="count">(3,657)</span></a>
+<a href="/hgiscanada/places/pe/">Prince Edward Island <span class="count">(148)</span></a>
+<a href="/hgiscanada/places/qc/">Quebec <span class="count">(4,518)</span></a>
+<a href="/hgiscanada/places/sk/">Saskatchewan <span class="count">(1,125)</span></a>
+<a href="/hgiscanada/places/yt/">Yukon <span class="count">(6)</span></a>
+</div>
+
+<h2>What's on each page</h2>
 <ul>
-<li>A natural-language summary of the place in that year</li>
-<li>Population and sex split, where the census recorded them</li>
-<li>A cross-year population trajectory — the <strong>same</strong> place across all eight censuses, stitched together by spatial polygon overlap</li>
-<li>Neighbouring CSDs in that census year</li>
-<li>Wikidata grounding (where available) and persistent place identifiers</li>
-<li>Source citation back to the original census tables on Borealis</li>
-<li>Schema.org structured data for search engines and citation-grounded RAG</li>
+<li>A prose summary describing the place in that census year</li>
+<li>Population total + sex split, where the census recorded them</li>
+<li>The <strong>full census record</strong> — every variable recorded for that subdivision in that year, grouped into collapsible category tables (Population, Age, Ethnic origin, Religion, Buildings, Agriculture, Manufacturing, Fisheries, Deaths)</li>
+<li>Cross-year population trajectory linking the <em>same</em> place across all 8 censuses, stitched together by spatial polygon overlap</li>
+<li>Neighbouring CSDs in that census year, internally linked</li>
+<li><strong>Boundary continuity</strong> links to overlapping CSDs in adjacent census years (CONTAINS / WITHIN / OVERLAPS) so chains across boundary changes are traceable</li>
+<li>Wikidata grounding where available, plus internal persistent place IDs and the source TCP UID</li>
+<li>Schema.org JSON-LD for structured-data crawlers</li>
+<li>Source citation pointing back to the underlying TCP / Borealis dataset</li>
 </ul>
 
-<h2>Why this exists</h2>
-<p>Historical census data for Canada is maintained as zip files on the Borealis Dataverse.
-Default-mode chatbots like Gemini and Claude can't read those, can't query a SPARQL endpoint,
-and can't open a graph database. They <em>can</em> read indexed web pages with prose plus
-structured data — so this site is the bridge between research-quality structured data and
-citizen-facing question answering.</p>
-
-<h2>Coverage by census year</h2>
+<h2>Coverage</h2>
 <table>
 <tr><th>Census year</th><th>CSD pages</th></tr>
 <tr><td>1851</td><td>897</td></tr>
@@ -62,8 +92,7 @@ citizen-facing question answering.</p>
 <tr><td>1921</td><td>5,312</td></tr>
 <tr><th>Total year-pages</th><th>20,438</th></tr>
 </table>
-<p>Plus one aggregate per persistent place across all years, available at
-<code>/places/&lt;prov&gt;/&lt;name&gt;-&lt;place-id&gt;/</code>.</p>
+<p>Plus an aggregate per persistent place across all years (~12,798 place-index pages).</p>
 
 <h2>Sample pages</h2>
 <ul>
@@ -72,34 +101,41 @@ citizen-facing question answering.</p>
 <li><a href="/hgiscanada/places/on/alfred-on031005-1851/">Alfred, Ontario (1851)</a> — Wikidata-grounded, eight-year trajectory</li>
 </ul>
 
-<h2>Data, code, methodology</h2>
-<p>This site is generated from the
-<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">Canada History Knowledge Graph</a>
-project. The underlying knowledge graph is published as:</p>
+<h2>For researchers</h2>
+<p>This site is the human-readable surface of a larger knowledge-graph project. The underlying
+data is also published as:</p>
 <ul>
-<li>A CIDOC-CRM Turtle file (for the LINCS LOD ecosystem)</li>
-<li>A KuzuDB graph database (for researchers using coding agents)</li>
-<li>These web pages (for citizen chatbot answers)</li>
+<li>A <strong>KuzuDB</strong> property graph (for researchers using coding agents like Claude Code, or for SPARQL/Cypher-style queries against the full dataset)</li>
+<li>A <strong>CIDOC-CRM Turtle</strong> export (for the LINCS Linked Open Data ecosystem and other LOD consumers)</li>
+<li>The <strong>per-place pages on this site</strong> (for citation-grounded research, classroom use, and chatbot retrieval)</li>
 </ul>
-<p>All three derive from the same source data; this site is the citizen-facing surface.</p>
+<p>See the <a href="/hgiscanada/about/">About / Methodology</a> page for the full data pipeline,
+identity model, and grounding methodology, or visit the
+<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">project repository</a>
+for code, the knowledge graph itself, and reproducibility.</p>
 
-<h2>How identity works here</h2>
-<p>Each page describes a <em>Place</em> (the enduring entity, e.g. "Westmeath") in a specific
-<em>Presence</em> (its 1871 census manifestation). Identity across years is established by
-spatial polygon overlap, not by name match — so a township that was renamed or whose
-neighbours shifted still threads through to the right modern entity. Where a Place has been
-linked to Wikidata, this page treats Wikidata's QID as the canonical identifier; queries
-about the deep-time meaning of a place inherit Wikidata's depth (or its limits).</p>
+<h2>How to cite</h2>
+<blockquote>
+Clifford, J. (2026). <em>HGIS Canada Knowledge Graph: Census Subdivisions, 1851–1921</em>
+[Web resource]. Built on the Canadian Peoples / TCP project. Available at
+<a href="https://jimclifford.ca/hgiscanada/">https://jimclifford.ca/hgiscanada/</a>.
+</blockquote>
+<p>For specific places, cite the page directly using its URL — each year-page and place-index page
+has a stable canonical URL.</p>
 
-<h2>License &amp; citation</h2>
-<p>The underlying census data is from the
-<a href="https://borealisdata.ca/dataverse/canadiansubdivisions">Canadian Peoples / TCP project</a>.
-The knowledge graph and these pages are released for academic and citizen use. Please cite
-both the TCP source and this project when using these pages as a reference.</p>
+<h2>Acknowledgments</h2>
+<p>The underlying census polygons and tabulations are from the
+<a href="https://borealisdata.ca/dataverse/canadiansubdivisions">Canadian Peoples / TCP project</a>,
+hosted by Borealis Dataverse and developed at the
+<a href="https://hgis.usask.ca/">HGIS Lab</a>, University of Saskatchewan. Wikidata grounding is
+performed via an MCP-assisted disambiguation pipeline. Spatial overlap chains and persistent-place
+identification follow methodology developed within the
+<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">project</a>.</p>
 
 <footer>
-Generated from the
-<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">Canada History Knowledge Graph</a>.
+<a href="/hgiscanada/about/">About / Methodology</a> &nbsp;·&nbsp;
+<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">Source code &amp; data</a> &nbsp;·&nbsp;
+<a href="https://hgiscanada.usask.ca/">hgiscanada.usask.ca</a> (parent project)
 </footer>
 </article>
 </body>

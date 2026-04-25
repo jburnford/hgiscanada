@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About / Methodology | HGIS Canada Knowledge Graph</title>
+<meta name="description" content="About the HGIS Canada Knowledge Graph: methodology, data sources, identity model, and citation guidance for the 1851–1921 Canadian Census Subdivision knowledge graph.">
+<link rel="canonical" href="https://jimclifford.ca/hgiscanada/about/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="About / Methodology — HGIS Canada Knowledge Graph">
+<meta property="og:description" content="Methodology, data sources, identity model, and citation guidance.">
+
+<style>
+  body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 780px;
+         margin: 2em auto; padding: 0 1em; line-height: 1.6; color: #222; }
+  h1 { border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.3em; }
+  h2 { margin-top: 1.8em; }
+  h3 { margin-top: 1.4em; }
+  .crumbs { font-size: 0.9em; color: #666; margin-bottom: 0.5em; }
+  .crumbs a { color: #0055aa; }
+  blockquote { border-left: 3px solid #ccc; margin: 1em 0; padding: 0.2em 0 0.2em 1em;
+              color: #555; }
+  code { background: #f5f5f5; padding: 0.1em 0.3em; border-radius: 2px; font-size: 0.9em; }
+  a { color: #0055aa; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #666;
+           border-top: 1px solid #ddd; padding-top: 1em; }
+</style>
+</head>
+<body>
+<article>
+<div class="crumbs"><a href="/hgiscanada/">HGIS Canada</a> › About / Methodology</div>
+<h1>About / Methodology</h1>
+
+<h2>What this is</h2>
+<p>The HGIS Canada Knowledge Graph is an academic resource that publishes the Canadian
+Census Subdivision (CSD) record, 1851–1921, as a queryable knowledge graph and a
+browseable corpus of per-place web pages. It is designed to serve three audiences:</p>
+<ul>
+<li><strong>Historians and historical geographers</strong> who want to look up a township, follow boundary changes across the eight censuses, or compare neighbours, without downloading and parsing the raw boundary files</li>
+<li><strong>The Linked Open Data community</strong>, who can consume the same data as CIDOC-CRM-compliant Turtle published for LINCS interoperability</li>
+<li><strong>AI assistants and citation-grounded RAG systems</strong> (Gemini, Claude, ChatGPT, Copilot), which can read the per-place pages — with their prose summaries and Schema.org structured data — to answer citizen questions about Canadian local history with citable sources</li>
+</ul>
+
+<h2>Relationship to hgiscanada.usask.ca</h2>
+<p>This project builds directly on the
+<a href="https://hgiscanada.usask.ca/">Canadian Peoples / TCP project</a> hosted at the
+<a href="https://hgis.usask.ca/">HGIS Lab</a>, University of Saskatchewan. That project
+provides:</p>
+<ul>
+<li>Georeferenced polygon boundaries for every Canadian Census Subdivision in each census from 1851 through 1921</li>
+<li>Transcribed census tables (population, ethnic origin, religion, agriculture, etc.) joined to the polygons by TCP UID</li>
+<li>The original record-pages with raw key-value census data for each CSD-year</li>
+</ul>
+<p>The HGIS Canada Knowledge Graph reorganises those source files into:</p>
+<ul>
+<li>A property-graph knowledge base (KuzuDB) with explicit Place / Presence / Measurement / CensusVariable nodes and typed edges (OBSERVED_IN, BORDERS, CONTINUES_AS, OVERLAPS_TEMPORALLY, SPLIT_FROM, MERGED_INTO, MEASURED_AT, OF_VARIABLE, PART_OF_COUNTY)</li>
+<li>Per-place prose pages with the full census record, neighbours, cross-year continuity, and Wikidata grounding</li>
+<li>A CIDOC-CRM RDF/Turtle export for LINCS publication</li>
+</ul>
+<p>The TCP project is the data source; this project is a knowledge-graph layer on top of it.
+Use this site for browsing, citing, or pointing AI assistants at; use the parent project for
+the underlying GIS layers and primary record pages.</p>
+
+<h2>Data model</h2>
+<p>Each page describes a <strong>Place</strong> (the enduring concept, e.g. "Westmeath
+Township" as a thing that existed across multiple censuses) in a specific
+<strong>Presence</strong> (its 1871 census manifestation, with that year's polygon, that
+year's tabulated values, that year's neighbours).</p>
+
+<h3>Identity across years</h3>
+<p>Identity from one census to the next is established by <strong>spatial polygon overlap</strong>,
+not name match. A township that was renamed (Berlin → Kitchener, 1916) or whose census-name
+spelling drifted (Pembroke / Pembroke Town–Ville) still threads through to the same enduring
+Place if its 1871 polygon overlaps its 1881 polygon at IoU ≥ 0.98 (a strict SAME_AS chain).
+This is fundamentally more reliable than name-matching for historical data.</p>
+
+<p>When boundaries shifted enough that the strict SAME_AS chain broke (typically because
+a township split off a town or annexed neighbouring land), the
+<strong>Boundary continuity</strong> section on each year-page surfaces the partial overlaps
+(CONTAINS, WITHIN, OVERLAPS) to adjacent census years. The Pembroke 1851 → Pembroke 1861 +
+Pembroke Town–Ville 1861 split is a representative example.</p>
+
+<h3>Wikidata grounding</h3>
+<p>Where a persistent Place can be identified with a modern Wikidata entity, the
+<code>owl:sameAs</code> link to that Wikidata QID becomes the canonical external identifier
+for the place. This means questions about the deep-time meaning of a place (its modern
+location, its current administrative status, its name in other languages) inherit from
+Wikidata rather than being modelled here. Where Wikidata's coverage is thin (pre-1850 phases,
+small townships that were dissolved, conflations of city / metro / county boundaries), this
+graph inherits the thinness — we do not attempt to reconstruct what Wikidata does not
+provide.</p>
+
+<p>Grounding is performed via an MCP-assisted disambiguation pipeline that uses spatial
+distance, name similarity, and entity-type filtering to validate Wikidata candidates. The
+~1,000+ verified Ontario matches were produced by this pipeline; the rest of Canada is
+in progress. Where no Wikidata match exists, places get a permanent minted URI per LINCS
+conventions (this work is staged separately).</p>
+
+<h2>How to cite</h2>
+<p>For the project as a whole:</p>
+<blockquote>
+Clifford, J. (2026). <em>HGIS Canada Knowledge Graph: Census Subdivisions, 1851–1921</em>
+[Web resource]. Built on the Canadian Peoples / TCP project. Available at
+<a href="https://jimclifford.ca/hgiscanada/">https://jimclifford.ca/hgiscanada/</a>.
+</blockquote>
+
+<p>For a specific place-year, cite the page directly using its canonical URL — every page
+has a stable URL of the form
+<code>https://jimclifford.ca/hgiscanada/places/&lt;prov&gt;/&lt;name&gt;-&lt;tcpuid&gt;-&lt;year&gt;/</code>.
+For the underlying TCP source data, cite:</p>
+<blockquote>
+St-Hilaire, M., Sweeney, S., Inwood, K., et al. <em>Canadian Census Subdivisions, 1851–1921</em>
+[Dataset]. Borealis Dataverse.
+<a href="https://borealisdata.ca/dataverse/canadiansubdivisions">borealisdata.ca/dataverse/canadiansubdivisions</a>.
+</blockquote>
+
+<h2>Reproducibility &amp; source code</h2>
+<p>The full pipeline — boundary processing, persistent-place identification via spatial
+overlap, Wikidata grounding, knowledge-graph construction in KuzuDB, RDF/Turtle export, and
+the page generator behind this site — is in the
+<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">Canada History
+Knowledge Graph</a> repository. The pipeline is parametric on province + census year; running
+it against an updated TCP release produces a refreshed site in approximately 30 seconds for
+the page generation step plus a few minutes for the KuzuDB rebuild.</p>
+
+<h2>Limitations</h2>
+<ul>
+<li><strong>Boundaries</strong> are derived from TCP's polygon files; any errors there propagate here. Boundary uncertainty for some pre-1881 northern and prairie CSDs is significant.</li>
+<li><strong>Census tabulations</strong> are transcribed by the TCP project from the original schedules; transcription errors and OCR artifacts in some early censuses propagate here. Where we found systematic OCR errors in CSD names (e.g. "Wesfwd" → "Westwood"), we corrected them via a canonical-name pass; row-level census values are unchecked.</li>
+<li><strong>Wikidata grounding coverage</strong> varies by province — Ontario is essentially complete; other provinces are in progress.</li>
+<li><strong>Major cities</strong> (Toronto, Montreal, Halifax) are fragmented across many ward-level CSDs in the source data, so a single "Toronto" page does not exist — instead, dozens of ward pages link to each other. A future iteration may add city-aggregate pages.</li>
+<li>The knowledge graph models 1851–1921 only; pre-1850 history is delegated to Wikidata's QID-level depth, and post-1921 census records are out of scope.</li>
+</ul>
+
+<h2>Acknowledgments</h2>
+<p>This project would not exist without the
+<a href="https://hgiscanada.usask.ca/">Canadian Peoples / TCP project</a> at the
+<a href="https://hgis.usask.ca/">HGIS Lab</a>, University of Saskatchewan, and the years of
+GIS, transcription, and methodological work behind it. Wikidata grounding uses the
+WikidataMCP service developed by the Wikimedia Foundation. Knowledge-graph construction is
+in <a href="https://kuzudb.com/">KuzuDB</a>. CIDOC-CRM modelling follows the
+<a href="https://www.lincsproject.ca/">LINCS</a> application profile.</p>
+
+<footer>
+<a href="/hgiscanada/">← Home</a> &nbsp;·&nbsp;
+<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">Source code &amp; data</a>
+</footer>
+</article>
+</body>
+</html>
