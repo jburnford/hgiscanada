@@ -28,8 +28,9 @@
 <article>
 <h1>Canadian Census Subdivisions, 1851–1921</h1>
 
-<p>This site publishes one page per Ontario Census Subdivision per census year, drawn
-from the Canadian Peoples / TCP boundary files and tabulations. Each page combines:</p>
+<p>This site publishes one page per Canadian Census Subdivision per census year, plus
+an aggregate page per persistent place, drawn from the Canadian Peoples / TCP boundary
+files and tabulations. Each page combines:</p>
 
 <ul>
 <li>A natural-language summary of the place in that year</li>
@@ -48,25 +49,27 @@ and can't open a graph database. They <em>can</em> read indexed web pages with p
 structured data — so this site is the bridge between research-quality structured data and
 citizen-facing question answering.</p>
 
-<h2>Coverage</h2>
+<h2>Coverage by census year</h2>
 <table>
-<tr><th>Census year</th><th>Pages</th></tr>
-<tr><td>1851</td><td>406</td></tr>
-<tr><td>1861</td><td>513</td></tr>
-<tr><td>1871</td><td>589</td></tr>
-<tr><td>1881</td><td>719</td></tr>
-<tr><td>1891</td><td>796</td></tr>
-<tr><td>1901</td><td>935</td></tr>
-<tr><td>1911</td><td>1,025</td></tr>
-<tr><td>1921</td><td>1,513</td></tr>
-<tr><th>Total</th><th>6,496</th></tr>
+<tr><th>Census year</th><th>CSD pages</th></tr>
+<tr><td>1851</td><td>897</td></tr>
+<tr><td>1861</td><td>1,161</td></tr>
+<tr><td>1871</td><td>1,773</td></tr>
+<tr><td>1881</td><td>2,135</td></tr>
+<tr><td>1891</td><td>2,473</td></tr>
+<tr><td>1901</td><td>3,181</td></tr>
+<tr><td>1911</td><td>3,506</td></tr>
+<tr><td>1921</td><td>5,312</td></tr>
+<tr><th>Total year-pages</th><th>20,438</th></tr>
 </table>
+<p>Plus one aggregate per persistent place across all years, available at
+<code>/places/&lt;prov&gt;/&lt;name&gt;-&lt;place-id&gt;/</code>.</p>
 
 <h2>Sample pages</h2>
 <ul>
-<li><a href="/hgiscanada/places/on/westmeath-on082003-1871/">Westmeath, Ontario (1871)</a> — Wikidata-grounded rural township, validated against pilot benchmarks</li>
+<li><a href="/hgiscanada/places/on/westmeath-on082003-1871/">Westmeath, Ontario (1871)</a> — Wikidata-grounded rural Ontario township, validated against pilot benchmarks</li>
+<li><a href="/hgiscanada/places/on/pembroke-on033009-1851/">Pembroke, Ontario (1851)</a> — Demonstrates boundary-continuity linking — Pembroke split into rural + town versions in 1861</li>
 <li><a href="/hgiscanada/places/on/alfred-on031005-1851/">Alfred, Ontario (1851)</a> — Wikidata-grounded, eight-year trajectory</li>
-<li><a href="/hgiscanada/places/on/darlington-on006004-1851/">Darlington, Ontario (1851)</a> — Currently ungrounded (illustrates the non-Wikidata path)</li>
 </ul>
 
 <h2>Data, code, methodology</h2>
