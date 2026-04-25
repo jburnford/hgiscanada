@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HGIS Canada — Census Subdivisions, 1851–1921</title>
+<meta name="description" content="A page-per-place historical knowledge graph for Canadian Census Subdivisions, with Wikidata grounding, cross-year continuity, and structured data for chatbot RAG.">
+<link rel="canonical" href="https://jimclifford.ca/hgiscanada/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="HGIS Canada — Census Subdivisions, 1851–1921">
+<meta property="og:description" content="A page-per-place historical knowledge graph for Canadian Census Subdivisions, with Wikidata grounding, cross-year continuity, and structured data for chatbot RAG.">
+
+<style>
+  body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 760px;
+         margin: 2em auto; padding: 0 1em; line-height: 1.55; color: #222; }
+  h1 { border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+  h2 { margin-top: 1.6em; }
+  a { color: #0055aa; }
+  table { border-collapse: collapse; margin: 0.5em 0; }
+  th, td { border: 1px solid #ddd; padding: 4px 12px; text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  footer { margin-top: 3em; font-size: 0.8em; color: #666;
+           border-top: 1px solid #ddd; padding-top: 1em; }
+</style>
+</head>
+<body>
+<article>
+<h1>Canadian Census Subdivisions, 1851–1921</h1>
+
+<p>This site publishes one page per Ontario Census Subdivision per census year, drawn
+from the Canadian Peoples / TCP boundary files and tabulations. Each page combines:</p>
+
+<ul>
+<li>A natural-language summary of the place in that year</li>
+<li>Population and sex split, where the census recorded them</li>
+<li>A cross-year population trajectory — the <strong>same</strong> place across all eight censuses, stitched together by spatial polygon overlap</li>
+<li>Neighbouring CSDs in that census year</li>
+<li>Wikidata grounding (where available) and persistent place identifiers</li>
+<li>Source citation back to the original census tables on Borealis</li>
+<li>Schema.org structured data for search engines and citation-grounded RAG</li>
+</ul>
+
+<h2>Why this exists</h2>
+<p>Historical census data for Canada is maintained as zip files on the Borealis Dataverse.
+Default-mode chatbots like Gemini and Claude can't read those, can't query a SPARQL endpoint,
+and can't open a graph database. They <em>can</em> read indexed web pages with prose plus
+structured data — so this site is the bridge between research-quality structured data and
+citizen-facing question answering.</p>
+
+<h2>Coverage</h2>
+<table>
+<tr><th>Census year</th><th>Pages</th></tr>
+<tr><td>1851</td><td>406</td></tr>
+<tr><td>1861</td><td>513</td></tr>
+<tr><td>1871</td><td>589</td></tr>
+<tr><td>1881</td><td>719</td></tr>
+<tr><td>1891</td><td>796</td></tr>
+<tr><td>1901</td><td>935</td></tr>
+<tr><td>1911</td><td>1,025</td></tr>
+<tr><td>1921</td><td>1,513</td></tr>
+<tr><th>Total</th><th>6,496</th></tr>
+</table>
+
+<h2>Sample pages</h2>
+<ul>
+<li><a href="/hgiscanada/places/on/westmeath-on082003-1871/">Westmeath, Ontario (1871)</a> — Wikidata-grounded rural township, validated against pilot benchmarks</li>
+<li><a href="/hgiscanada/places/on/alfred-on031005-1851/">Alfred, Ontario (1851)</a> — Wikidata-grounded, eight-year trajectory</li>
+<li><a href="/hgiscanada/places/on/darlington-on006004-1851/">Darlington, Ontario (1851)</a> — Currently ungrounded (illustrates the non-Wikidata path)</li>
+</ul>
+
+<h2>Data, code, methodology</h2>
+<p>This site is generated from the
+<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">Canada History Knowledge Graph</a>
+project. The underlying knowledge graph is published as:</p>
+<ul>
+<li>A CIDOC-CRM Turtle file (for the LINCS LOD ecosystem)</li>
+<li>A KuzuDB graph database (for researchers using coding agents)</li>
+<li>These web pages (for citizen chatbot answers)</li>
+</ul>
+<p>All three derive from the same source data; this site is the citizen-facing surface.</p>
+
+<h2>How identity works here</h2>
+<p>Each page describes a <em>Place</em> (the enduring entity, e.g. "Westmeath") in a specific
+<em>Presence</em> (its 1871 census manifestation). Identity across years is established by
+spatial polygon overlap, not by name match — so a township that was renamed or whose
+neighbours shifted still threads through to the right modern entity. Where a Place has been
+linked to Wikidata, this page treats Wikidata's QID as the canonical identifier; queries
+about the deep-time meaning of a place inherit Wikidata's depth (or its limits).</p>
+
+<h2>License &amp; citation</h2>
+<p>The underlying census data is from the
+<a href="https://borealisdata.ca/dataverse/canadiansubdivisions">Canadian Peoples / TCP project</a>.
+The knowledge graph and these pages are released for academic and citizen use. Please cite
+both the TCP source and this project when using these pages as a reference.</p>
+
+<footer>
+Generated from the
+<a href="https://github.com/jburnford/Canada-History-Knowledge-Graph">Canada History Knowledge Graph</a>.
+</footer>
+</article>
+</body>
+</html>
