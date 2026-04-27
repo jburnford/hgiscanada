@@ -77,40 +77,10 @@
 <li><a href="/hgiscanada/places/on/thompson-on054052-1911/">Thompson</a></li>
 </ul>
 <h2>Full census record, 1911</h2>
-<p>The 1911 census recorded <strong>18</strong> measurements for this Census Subdivision across <strong>3</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (5 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of males in the population</td><td>34</td></tr>
-<tr><td>Number of males with marital status not given</td><td>31</td></tr>
-<tr><td>Number of married males</td><td>2</td></tr>
-<tr><td>Number of single (never-married) males</td><td>1</td></tr>
-<tr><td>Total population</td><td>143</td></tr>
-</table>
-</details>
-<details><summary><strong>Ethnic origin</strong> (7 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of persons of British origin (English)</td><td>22</td></tr>
-<tr><td>Number of persons of British origin (Irish)</td><td>26</td></tr>
-<tr><td>Number of persons of British origin (Scotch / Scottish)</td><td>22</td></tr>
-<tr><td>Number of persons of French origin</td><td>59</td></tr>
-<tr><td>Number of persons of German origin</td><td>4</td></tr>
-<tr><td>Number of persons of Polish origin</td><td>9</td></tr>
-<tr><td>Number of persons of Swiss origin</td><td>1</td></tr>
-</table>
-</details>
-<details><summary><strong>Religion</strong> (6 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of Anglicans (Church of England)</td><td>17</td></tr>
-<tr><td>Number of Baptists</td><td>1</td></tr>
-<tr><td>Number of Congregationalists</td><td>1</td></tr>
-<tr><td>Number of Methodists</td><td>6</td></tr>
-<tr><td>Number of Presbyterians</td><td>41</td></tr>
-<tr><td>Number of Roman Catholics</td><td>77</td></tr>
-</table>
-</details>
+<p>The 1911 census recorded <strong>18</strong> measurements for this Census Subdivision across <strong>3</strong> categories.</p>
+<p><strong>Population & families (1911).</strong> This community's record includes 143 total population, 34 males in the population, 31 males with marital status not given, 2 married males, 1 single (never-married) males. <em>(Source: 1911 Census of Canada, V1T1; V1T2.)</em></p>
+<p><strong>Ethnic origin (1911).</strong> This community's record includes 59 persons of French origin, 26 persons of British origin (Irish), 22 persons of British origin (English), 22 persons of British origin (Scotch / Scottish), 9 persons of Polish origin, 4 persons of German origin, 1 persons of Swiss origin. <em>(Source: 1911 Census of Canada, V2T7.)</em></p>
+<p><strong>Religion (1911).</strong> This community's record includes 77 Roman Catholics, 41 Presbyterians, 17 Anglicans (Church of England), 6 Methodists, 1 Baptists, 1 Congregationalists. <em>(Source: 1911 Census of Canada, V2T2.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -155,10 +125,249 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/on/cobden-on054
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1911)",
-      "value": 143
+      "name": "Total population",
+      "value": 143,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Roman Catholics",
+      "value": 77,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ROMAN_CATHOLICS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1911 Census of Canada, V2T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of French origin",
+      "value": 59,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/FRENCH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1911 Census of Canada, V2T7"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Presbyterians",
+      "value": 41,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/PRESBYTERIANS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1911 Census of Canada, V2T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 34,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males with marital status not given",
+      "value": 31,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/M_NOT_GIVEN",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of British origin (Irish)",
+      "value": 26,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BRIT_IRISH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1911 Census of Canada, V2T7"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of British origin (English)",
+      "value": 22,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BRIT_ENGLISH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1911 Census of Canada, V2T7"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of British origin (Scotch / Scottish)",
+      "value": 22,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BRIT_SCOTCH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1911 Census of Canada, V2T7"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Anglicans (Church of England)",
+      "value": 17,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ANGLICANS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1911 Census of Canada, V2T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of Polish origin",
+      "value": 9,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POLISH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1911 Census of Canada, V2T7"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Methodists",
+      "value": 6,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/METHODISTS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1911 Census of Canada, V2T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of German origin",
+      "value": 4,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/GERMAN",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1911 Census of Canada, V2T7"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of married males",
+      "value": 2,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/M_MARRIED",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Baptists",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BAPTISTS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1911 Census of Canada, V2T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Congregationalists",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/CONGREGATIONALISTS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1911 Census of Canada, V2T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of single (never-married) males",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/M_SINGLE",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of Swiss origin",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/SWISS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1911 Census of Canada, V2T7"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1911)",
+    "description": "All 18 measurements recorded for this Census Subdivision in 1911, in JSONL form. Filter by tcpuid=ON054015 and year=1911 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1911.jsonl"
+    }
+  }
 }
 </script>
 

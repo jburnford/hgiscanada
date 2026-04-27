@@ -64,30 +64,10 @@
 <li><a href="/hgiscanada/places/bc/the-islands-bc212005-1921/">The Islands</a></li>
 </ul>
 <h2>Full census record, 1921</h2>
-<p>The 1921 census recorded <strong>8</strong> measurements for this Census Subdivision across <strong>3</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (5 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of females born in Canada</td><td>836</td></tr>
-<tr><td>Number of females in the population</td><td>836</td></tr>
-<tr><td>Number of males born in Canada</td><td>809</td></tr>
-<tr><td>Number of males in the population</td><td>809</td></tr>
-<tr><td>Total population</td><td>1,645</td></tr>
-</table>
-</details>
-<details><summary><strong>Ethnic origin</strong> (1 variable)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Persons recorded under the official census category &quot;Indian&quot;; corresponds to what is now described as Indigenous (First Nations; in northern enumerations also Inuit) origin. &quot;Indian&quot; was simultaneously a census category and the legal/administrative term under the Indian Act (1876).</td><td>1,645</td></tr>
-</table>
-</details>
-<details><summary><strong>Religion</strong> (2 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of Methodists</td><td>201</td></tr>
-<tr><td>Number of Roman Catholics</td><td>1,444</td></tr>
-</table>
-</details>
+<p>The 1921 census recorded <strong>8</strong> measurements for this Census Subdivision across <strong>3</strong> categories.</p>
+<p><strong>Population & families (1921).</strong> This community's record includes 1,645 total population, 836 females born in Canada, 836 females in the population, 809 males born in Canada, 809 males in the population. <em>(Source: 1921 Census of Canada, V1T16.)</em></p>
+<p><strong>Ethnic origin (1921).</strong> 1,645 persons recorded under the official census category &quot;Indian&quot;; corresponds to what is now described as Indigenous (First Nations; in northern enumerations also Inuit) origin. &quot;Indian&quot; was simultaneously a census category and the legal/administrative term under the Indian Act (1876). <em>(Source: 1921 Census of Canada, V1T27.)</em></p>
+<p><strong>Religion (1921).</strong> This community's record includes 1,444 Roman Catholics, 201 Methodists. <em>(Source: 1921 Census of Canada, V1T38.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -131,10 +111,119 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/bc/indian-reser
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1921)",
-      "value": 1645
+      "name": "Total population",
+      "value": 1645,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Persons recorded under the official census category \"Indian\"; corresponds to what is now described as Indigenous (First Nations; in northern enumerations also Inuit) origin. \"Indian\" was simultaneously a census category and the legal/administrative term under the Indian Act (1876).",
+      "value": 1645,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/INDIAN",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Roman Catholics",
+      "value": 1444,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ROMAN_CATHOLICS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females in the population",
+      "value": 836,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females born in Canada",
+      "value": 836,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/CAN_BORN_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 809,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males born in Canada",
+      "value": 809,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/CAN_BORN_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Methodists",
+      "value": 201,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/METHODISTS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1921)",
+    "description": "All 8 measurements recorded for this Census Subdivision in 1921, in JSONL form. Filter by tcpuid=BC212006 and year=1921 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1921.jsonl"
+    }
+  }
 }
 </script>
 

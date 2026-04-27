@@ -64,18 +64,8 @@
 <li><a href="/hgiscanada/places/sk/210-townships-sk212001-1911/">210 townships</a></li>
 </ul>
 <h2>Full census record, 1911</h2>
-<p>The 1911 census recorded <strong>6</strong> measurements for this Census Subdivision across <strong>1</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (6 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Area in acres</td><td>7,559</td></tr>
-<tr><td>Area in square miles</td><td>11.81</td></tr>
-<tr><td>Number of females in the population</td><td>2,527</td></tr>
-<tr><td>Number of males in the population</td><td>3,727</td></tr>
-<tr><td>Population per square mile</td><td>529.51</td></tr>
-<tr><td>Total population</td><td>6,254</td></tr>
-</table>
-</details>
+<p>The 1911 census recorded <strong>6</strong> measurements for this Census Subdivision across <strong>1</strong> category.</p>
+<p><strong>Population & families (1911).</strong> This community's record includes 7,559 area in acres, 6,254 total population, 3,727 males in the population, 2,527 females in the population, 529.51 population per square mile, 11.81 area in square miles. <em>(Source: 1911 Census of Canada, V1T1.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -126,10 +116,93 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/sk/prince-alber
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1911)",
-      "value": 6254
+      "name": "Area in acres",
+      "value": 7559,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/AREA_ACRES",
+      "unitText": "acres",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total population",
+      "value": 6254,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 3727,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females in the population",
+      "value": 2527,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population per square mile",
+      "value": 529.51,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_PER_SQ_MI",
+      "unitText": "persons_per_sq_mi",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Area in square miles",
+      "value": 11.811,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/AREA_SQ_MI",
+      "unitText": "square_miles",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1911)",
+    "description": "All 6 measurements recorded for this Census Subdivision in 1911, in JSONL form. Filter by tcpuid=SK212018 and year=1911 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1911.jsonl"
+    }
+  }
 }
 </script>
 

@@ -66,37 +66,10 @@
 <li><a href="/hgiscanada/places/qc/ste-anne-par-tremblay-tp-ct-qc050010-1921/">Ste. Anne, par. (Tremblay tp.—ct.)</a></li>
 </ul>
 <h2>Full census record, 1921</h2>
-<p>The 1921 census recorded <strong>15</strong> measurements for this Census Subdivision across <strong>3</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (8 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of females born in Canada</td><td>483</td></tr>
-<tr><td>Number of females born outside the British Empire</td><td>3</td></tr>
-<tr><td>Number of females in the population</td><td>486</td></tr>
-<tr><td>Number of males born in Canada</td><td>555</td></tr>
-<tr><td>Number of males born in the British Empire (excluding Canada)</td><td>1</td></tr>
-<tr><td>Number of males born outside the British Empire</td><td>12</td></tr>
-<tr><td>Number of males in the population</td><td>568</td></tr>
-<tr><td>Total population</td><td>1,054</td></tr>
-</table>
-</details>
-<details><summary><strong>Ethnic origin</strong> (4 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of persons of British origin (English)</td><td>13</td></tr>
-<tr><td>Number of persons of French origin</td><td>1,030</td></tr>
-<tr><td>Number of persons of Italian origin</td><td>9</td></tr>
-<tr><td>Number of persons of Polish origin</td><td>2</td></tr>
-</table>
-</details>
-<details><summary><strong>Religion</strong> (3 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of Anglicans (Church of England)</td><td>2</td></tr>
-<tr><td>Number of Protestants (general / no denomination specified)</td><td>7</td></tr>
-<tr><td>Number of Roman Catholics</td><td>1,045</td></tr>
-</table>
-</details>
+<p>The 1921 census recorded <strong>15</strong> measurements for this Census Subdivision across <strong>3</strong> categories.</p>
+<p><strong>Population & families (1921).</strong> This community's record includes 1,054 total population, 568 males in the population, 555 males born in Canada, 486 females in the population, 483 females born in Canada, 12 males born outside the British Empire, 3 females born outside the British Empire, 1 males born in the British Empire (excluding Canada). <em>(Source: 1921 Census of Canada, V1T16.)</em></p>
+<p><strong>Ethnic origin (1921).</strong> This community's record includes 1,030 persons of French origin, 13 persons of British origin (English), 9 persons of Italian origin, 2 persons of Polish origin. <em>(Source: 1921 Census of Canada, V1T27.)</em></p>
+<p><strong>Religion (1921).</strong> This community's record includes 1,045 Roman Catholics, 7 Protestants (general / no denomination specified), 2 Anglicans (Church of England). <em>(Source: 1921 Census of Canada, V1T38.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -147,10 +120,210 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/qc/st-honor-par
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1921)",
-      "value": 1054
+      "name": "Total population",
+      "value": 1054,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Roman Catholics",
+      "value": 1045,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ROMAN_CATHOLICS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of French origin",
+      "value": 1030,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/EUR_FRENCH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 568,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males born in Canada",
+      "value": 555,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/CAN_BORN_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females in the population",
+      "value": 486,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females born in Canada",
+      "value": 483,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/CAN_BORN_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of British origin (English)",
+      "value": 13,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BRIT_ENG",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males born outside the British Empire",
+      "value": 12,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/FOREIGN_BORN_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of Italian origin",
+      "value": 9,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/EUR_ITALIAN",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Protestants (general / no denomination specified)",
+      "value": 7,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/PROTESTANTS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females born outside the British Empire",
+      "value": 3,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/FOREIGN_BORN_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of Polish origin",
+      "value": 2,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/EUR_POLISH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Anglicans (Church of England)",
+      "value": 2,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ANGLICANS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males born in the British Empire (excluding Canada)",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BRIT_BORN_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1921)",
+    "description": "All 15 measurements recorded for this Census Subdivision in 1921, in JSONL form. Filter by tcpuid=QC050015 and year=1921 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1921.jsonl"
+    }
+  }
 }
 </script>
 

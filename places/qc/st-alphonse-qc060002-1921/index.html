@@ -72,36 +72,10 @@
 <li><a href="/hgiscanada/places/qc/ste-b-atrice-qc060004-1921/">Ste. Béatrice</a></li>
 </ul>
 <h2>Full census record, 1921</h2>
-<p>The 1921 census recorded <strong>14</strong> measurements for this Census Subdivision across <strong>3</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (7 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of females born in Canada</td><td>342</td></tr>
-<tr><td>Number of females born outside the British Empire</td><td>1</td></tr>
-<tr><td>Number of females in the population</td><td>343</td></tr>
-<tr><td>Number of males born in Canada</td><td>365</td></tr>
-<tr><td>Number of males born outside the British Empire</td><td>1</td></tr>
-<tr><td>Number of males in the population</td><td>366</td></tr>
-<tr><td>Total population</td><td>709</td></tr>
-</table>
-</details>
-<details><summary><strong>Ethnic origin</strong> (3 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of persons of British origin (Irish)</td><td>97</td></tr>
-<tr><td>Number of persons of British origin (Scotch / Scottish)</td><td>1</td></tr>
-<tr><td>Number of persons of French origin</td><td>592</td></tr>
-</table>
-</details>
-<details><summary><strong>Religion</strong> (4 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of Anglicans (Church of England)</td><td>14</td></tr>
-<tr><td>Number of Baptists</td><td>1</td></tr>
-<tr><td>Number of persons whose religion or origin is unspecified</td><td>19</td></tr>
-<tr><td>Number of Roman Catholics</td><td>675</td></tr>
-</table>
-</details>
+<p>The 1921 census recorded <strong>14</strong> measurements for this Census Subdivision across <strong>3</strong> categories.</p>
+<p><strong>Population & families (1921).</strong> This community's record includes 709 total population, 366 males in the population, 365 males born in Canada, 343 females in the population, 342 females born in Canada, 1 females born outside the British Empire, 1 males born outside the British Empire. <em>(Source: 1921 Census of Canada, V1T16.)</em></p>
+<p><strong>Ethnic origin (1921).</strong> This community's record includes 592 persons of French origin, 97 persons of British origin (Irish), 1 persons of British origin (Scotch / Scottish). <em>(Source: 1921 Census of Canada, V1T27.)</em></p>
+<p><strong>Religion (1921).</strong> This community's record includes 675 Roman Catholics, 19 persons whose religion or origin is unspecified, 14 Anglicans (Church of England), 1 Baptists. <em>(Source: 1921 Census of Canada, V1T27; V1T38.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -152,10 +126,197 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/qc/st-alphonse-
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1921)",
-      "value": 709
+      "name": "Total population",
+      "value": 709,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Roman Catholics",
+      "value": 675,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ROMAN_CATHOLICS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of French origin",
+      "value": 592,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/EUR_FRENCH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 366,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males born in Canada",
+      "value": 365,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/CAN_BORN_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females in the population",
+      "value": 343,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females born in Canada",
+      "value": 342,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/CAN_BORN_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of British origin (Irish)",
+      "value": 97,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BRIT_IRISH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons whose religion or origin is unspecified",
+      "value": 19,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/UNSPECIFIED",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Anglicans (Church of England)",
+      "value": 14,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ANGLICANS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Baptists",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BAPTISTS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of British origin (Scotch / Scottish)",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BRIT_SCOTCH",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males born outside the British Empire",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/FOREIGN_BORN_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females born outside the British Empire",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/FOREIGN_BORN_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1921 Census of Canada, V1T16"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1921)",
+    "description": "All 14 measurements recorded for this Census Subdivision in 1921, in JSONL form. Filter by tcpuid=QC060002 and year=1921 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1921.jsonl"
+    }
+  }
 }
 </script>
 

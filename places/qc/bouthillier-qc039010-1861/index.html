@@ -70,22 +70,9 @@
 <li><a href="/hgiscanada/places/qc/wabasse-and-wright-qc039037-1861/">Wabasse and Wright</a></li>
 </ul>
 <h2>Full census record, 1861</h2>
-<p>The 1861 census recorded <strong>5</strong> measurements for this Census Subdivision across <strong>2</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (1 variable)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Total population</td><td>59</td></tr>
-</table>
-</details>
-<details><summary><strong>Ethnic origin</strong> (4 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of French Canadians</td><td>42</td></tr>
-<tr><td>Number of negroes or coloured persons</td><td>21</td></tr>
-<tr><td>Number of persons native to Canada, not of French origin</td><td>16</td></tr>
-<tr><td>Number of persons originating in Ireland</td><td>1</td></tr>
-</table>
-</details>
+<p>The 1861 census recorded <strong>5</strong> measurements for this Census Subdivision across <strong>2</strong> categories.</p>
+<p><strong>Population & families (1861).</strong> This community's record includes 59 total population. <em>(Source: 1861 Census of Canada, V1T5.)</em></p>
+<p><strong>Ethnic origin (1861).</strong> This community's record includes 42 French Canadians, 21 negroes or coloured persons, 16 persons native to Canada, not of French origin, 1 persons originating in Ireland. <em>(Source: 1861 Census of Canada, V1T1.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -129,10 +116,80 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/qc/bouthillier-
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1861)",
-      "value": 59
+      "name": "Total population",
+      "value": 59,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_XX_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1861 Census of Canada, V1T5"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of French Canadians",
+      "value": 42,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ETH_FC_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1861 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of negroes or coloured persons",
+      "value": 21,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ETH_XN_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1861 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons native to Canada, not of French origin",
+      "value": 16,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ETH_XA_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1861 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons originating in Ireland",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ORIG_IR_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1861 Census of Canada, V1T1"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1861)",
+    "description": "All 5 measurements recorded for this Census Subdivision in 1861, in JSONL form. Filter by tcpuid=QC039010 and year=1861 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1861.jsonl"
+    }
+  }
 }
 </script>
 

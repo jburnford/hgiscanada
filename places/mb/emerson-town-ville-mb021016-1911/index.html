@@ -78,19 +78,8 @@
 <li><a href="/hgiscanada/places/mb/st-boniface-c-mb021015-1911/">St. Boniface, C</a></li>
 </ul>
 <h2>Full census record, 1911</h2>
-<p>The 1911 census recorded <strong>7</strong> measurements for this Census Subdivision across <strong>1</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (7 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Area in acres</td><td>5,000</td></tr>
-<tr><td>Area in square miles</td><td>7.81</td></tr>
-<tr><td>Number of females in the population</td><td>472</td></tr>
-<tr><td>Number of males in the population</td><td>571</td></tr>
-<tr><td>Population in the previous census (1901 reference column included in 1911 V1T1)</td><td>840</td></tr>
-<tr><td>Population per square mile</td><td>133.50</td></tr>
-<tr><td>Total population</td><td>1,043</td></tr>
-</table>
-</details>
+<p>The 1911 census recorded <strong>7</strong> measurements for this Census Subdivision across <strong>1</strong> category.</p>
+<p><strong>Population & families (1911).</strong> This community's record includes 5,000 area in acres, 1,043 total population, 571 males in the population, 472 females in the population, 133.50 population per square mile, 7.81 area in square miles. 840 population in the previous census (1901 reference column included in 1911 V1T1). <em>(Source: 1911 Census of Canada, V1T1.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -141,10 +130,106 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/mb/emerson-town
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1911)",
-      "value": 1043
+      "name": "Area in acres",
+      "value": 5000,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/AREA_ACRES",
+      "unitText": "acres",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total population",
+      "value": 1043,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population in the previous census (1901 reference column included in 1911 V1T1)",
+      "value": 840,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 571,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females in the population",
+      "value": 472,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population per square mile",
+      "value": 133.5,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_PER_SQ_MI",
+      "unitText": "persons_per_sq_mi",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Area in square miles",
+      "value": 7.81,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/AREA_SQ_MI",
+      "unitText": "square_miles",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1911)",
+    "description": "All 7 measurements recorded for this Census Subdivision in 1911, in JSONL form. Filter by tcpuid=MB021016 and year=1911 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1911.jsonl"
+    }
+  }
 }
 </script>
 

@@ -65,27 +65,10 @@
 <li><a href="/hgiscanada/places/qc/plessis-qc015014-1861/">Plessis</a></li>
 </ul>
 <h2>Full census record, 1861</h2>
-<p>The 1861 census recorded <strong>5</strong> measurements for this Census Subdivision across <strong>3</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (1 variable)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Total population</td><td>5</td></tr>
-</table>
-</details>
-<details><summary><strong>Ethnic origin</strong> (1 variable)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of French Canadians</td><td>5</td></tr>
-</table>
-</details>
-<details><summary><strong>Agriculture</strong> (3 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of horses aged over 3 years</td><td>3</td></tr>
-<tr><td>Value of all livestock</td><td>200</td></tr>
-<tr><td>Value of horses aged over 3 years</td><td>200</td></tr>
-</table>
-</details>
+<p>The 1861 census recorded <strong>5</strong> measurements for this Census Subdivision across <strong>3</strong> categories.</p>
+<p><strong>Population & families (1861).</strong> This community's record includes 5 total population. <em>(Source: 1861 Census of Canada, V1T5.)</em></p>
+<p><strong>Ethnic origin (1861).</strong> This community's record includes 5 French Canadians. <em>(Source: 1861 Census of Canada, V1T1.)</em></p>
+<p><strong>Agriculture (1861).</strong> This community's record includes $200 value all livestock, $200 value horses aged over 3 years, 3 horses aged over 3 years. <em>(Source: 1861 Census of Canada, V2T11.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -129,10 +112,80 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/qc/kinogami-qc0
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1861)",
-      "value": 5
+      "name": "Value of horses aged over 3 years",
+      "value": 200,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HRS_ov03_V",
+      "unitText": "dollars",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Agriculture",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGR"
+      },
+      "citation": "1861 Census of Canada, V2T11"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Value of all livestock",
+      "value": 200,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/STO_XX_V",
+      "unitText": "dollars",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Agriculture",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGR"
+      },
+      "citation": "1861 Census of Canada, V2T11"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total population",
+      "value": 5,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_XX_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1861 Census of Canada, V1T5"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of French Canadians",
+      "value": 5,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ETH_FC_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
+      },
+      "citation": "1861 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of horses aged over 3 years",
+      "value": 3,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HRS_ov03_N",
+      "unitText": "head",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Agriculture",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGR"
+      },
+      "citation": "1861 Census of Canada, V2T11"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1861)",
+    "description": "All 5 measurements recorded for this Census Subdivision in 1861, in JSONL form. Filter by tcpuid=QC015009 and year=1861 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1861.jsonl"
+    }
+  }
 }
 </script>
 

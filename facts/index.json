@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "year": 1851,
+      "path": "/hgiscanada/facts/1851.jsonl",
+      "facts": 146774,
+      "size_bytes": 59009189
+    },
+    {
+      "year": 1861,
+      "path": "/hgiscanada/facts/1861.jsonl",
+      "facts": 160035,
+      "size_bytes": 64192669
+    },
+    {
+      "year": 1871,
+      "path": "/hgiscanada/facts/1871.jsonl",
+      "facts": 36789,
+      "size_bytes": 14329157
+    },
+    {
+      "year": 1881,
+      "path": "/hgiscanada/facts/1881.jsonl",
+      "facts": 71010,
+      "size_bytes": 28088001
+    },
+    {
+      "year": 1891,
+      "path": "/hgiscanada/facts/1891.jsonl",
+      "facts": 194148,
+      "size_bytes": 76814998
+    },
+    {
+      "year": 1901,
+      "path": "/hgiscanada/facts/1901.jsonl",
+      "facts": 37689,
+      "size_bytes": 14378264
+    },
+    {
+      "year": 1911,
+      "path": "/hgiscanada/facts/1911.jsonl",
+      "facts": 86820,
+      "size_bytes": 34670764
+    },
+    {
+      "year": 1921,
+      "path": "/hgiscanada/facts/1921.jsonl",
+      "facts": 122253,
+      "size_bytes": 49638829
+    }
+  ],
+  "total_facts": 855518,
+  "vocab": "/hgiscanada/vocab/variables.jsonl"
+}

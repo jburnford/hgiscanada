@@ -69,16 +69,8 @@
 <li><a href="/hgiscanada/places/mb/134-townships-mb022001-1911/">134 townships</a></li>
 </ul>
 <h2>Full census record, 1911</h2>
-<p>The 1911 census recorded <strong>4</strong> measurements for this Census Subdivision across <strong>1</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (4 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of females in the population</td><td>455</td></tr>
-<tr><td>Number of males in the population</td><td>550</td></tr>
-<tr><td>Population in the previous census (1901 reference column included in 1911 V1T1)</td><td>589</td></tr>
-<tr><td>Total population</td><td>1,005</td></tr>
-</table>
-</details>
+<p>The 1911 census recorded <strong>4</strong> measurements for this Census Subdivision across <strong>1</strong> category.</p>
+<p><strong>Population & families (1911).</strong> This community's record includes 1,005 total population, 550 males in the population, 455 females in the population. 589 population in the previous census (1901 reference column included in 1911 V1T1). <em>(Source: 1911 Census of Canada, V1T1.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -129,10 +121,67 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/mb/stonewall-t-
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1911)",
-      "value": 1005
+      "name": "Total population",
+      "value": 1005,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Population in the previous census (1901 reference column included in 1911 V1T1)",
+      "value": 589,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 550,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females in the population",
+      "value": 455,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1911)",
+    "description": "All 4 measurements recorded for this Census Subdivision in 1911, in JSONL form. Filter by tcpuid=MB022012 and year=1911 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1911.jsonl"
+    }
+  }
 }
 </script>
 

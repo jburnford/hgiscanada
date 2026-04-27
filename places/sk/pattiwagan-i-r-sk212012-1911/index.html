@@ -67,16 +67,8 @@
 <li><a href="/hgiscanada/places/sk/unorganized-parts-sk212002-1911/">Unorganized parts</a></li>
 </ul>
 <h2>Full census record, 1911</h2>
-<p>The 1911 census recorded <strong>4</strong> measurements for this Census Subdivision across <strong>1</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (4 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of females in the population</td><td>136</td></tr>
-<tr><td>Number of males in the population</td><td>169</td></tr>
-<tr><td>Population in the previous census (1901 reference column included in 1911 V1T1)</td><td>1,233</td></tr>
-<tr><td>Total population</td><td>305</td></tr>
-</table>
-</details>
+<p>The 1911 census recorded <strong>4</strong> measurements for this Census Subdivision across <strong>1</strong> category.</p>
+<p><strong>Population & families (1911).</strong> This community's record includes 305 total population, 169 males in the population, 136 females in the population. 1,233 population in the previous census (1901 reference column included in 1911 V1T1). <em>(Source: 1911 Census of Canada, V1T1.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -120,10 +112,67 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/sk/pattiwagan-i
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1911)",
-      "value": 305
+      "name": "Population in the previous census (1901 reference column included in 1911 V1T1)",
+      "value": 1233,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total population",
+      "value": 305,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_TOT",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males in the population",
+      "value": 169,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_M",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females in the population",
+      "value": 136,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_F",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1911 Census of Canada, V1T1"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1911)",
+    "description": "All 4 measurements recorded for this Census Subdivision in 1911, in JSONL form. Filter by tcpuid=SK212012 and year=1911 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1911.jsonl"
+    }
+  }
 }
 </script>
 

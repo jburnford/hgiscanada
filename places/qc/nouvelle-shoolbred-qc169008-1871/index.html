@@ -61,9 +61,9 @@
 <p>Spatial polygon overlaps with adjacent census years where the boundary shifted enough that the SAME_AS chain didn't merge them. These show where the territory came from and went to even when it isn't tracked as the same persistent place.</p>
 <h3>Later boundary forms</h3>
 <ul>
-<li>In a later year, this CSD contained <a href="/hgiscanada/places/qc/st-jean-l-vang-liste-qc038011-1881/">St. Jean l&#x27;Évangéliste, 1881</a> (70.5% of this CSD's polygon).</li>
 <li>In a later year, this CSD contained <a href="/hgiscanada/places/qc/escuminac-village-qc038012-1881/">Escuminac, Village, 1881</a> (28.9% of this CSD's polygon).</li>
 <li>In a later year, this CSD contained <a href="/hgiscanada/places/qc/shoolbred-village-qc038010-1881/">Shoolbred, Village, 1881</a> (0.6% of this CSD's polygon).</li>
+<li>In a later year, this CSD contained <a href="/hgiscanada/places/qc/st-jean-l-vang-liste-qc038011-1881/">St. Jean l&#x27;Évangéliste, 1881</a> (70.5% of this CSD's polygon).</li>
 </ul>
 <h2>Neighbouring Census Subdivisions in 1871</h2>
 <p>In the 1871 census, Nouvelle, Shoolbred shared boundaries with:</p>
@@ -73,46 +73,11 @@
 <li><a href="/hgiscanada/places/qc/no-data-qc169999-1871/">NO DATA</a></li>
 </ul>
 <h2>Full census record, 1871</h2>
-<p>The 1871 census recorded <strong>19</strong> measurements for this Census Subdivision across <strong>4</strong> categories. Tables below are collapsible.</p>
-<details open><summary><strong>Population & families</strong> (10 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of families</td><td>294</td></tr>
-<tr><td>Number of females</td><td>791</td></tr>
-<tr><td>Number of males</td><td>859</td></tr>
-<tr><td>Number of married females</td><td>234</td></tr>
-<tr><td>Number of married males</td><td>234</td></tr>
-<tr><td>Number of married persons</td><td>468</td></tr>
-<tr><td>Number of widowed females</td><td>33</td></tr>
-<tr><td>Number of widowed males</td><td>22</td></tr>
-<tr><td>Number of widowed persons</td><td>55</td></tr>
-<tr><td>Total population</td><td>1,650</td></tr>
-</table>
-</details>
-<details><summary><strong>Age structure</strong> (3 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of single females under 18</td><td>524</td></tr>
-<tr><td>Number of single males under 18</td><td>603</td></tr>
-<tr><td>Number of single persons under 18</td><td>1,127</td></tr>
-</table>
-</details>
-<details><summary><strong>Buildings & housing</strong> (5 variables)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Number of dwellings that are temporary shanties</td><td>5</td></tr>
-<tr><td>Number of houses under construction</td><td>6</td></tr>
-<tr><td>Number of inhabited houses</td><td>281</td></tr>
-<tr><td>Number of occupied houses</td><td>286</td></tr>
-<tr><td>Number of uninhabited houses</td><td>11</td></tr>
-</table>
-</details>
-<details><summary><strong>Agriculture</strong> (1 variable)</summary>
-<table>
-<tr><th>Variable</th><th>Value</th></tr>
-<tr><td>Total area (acres)</td><td>88,901</td></tr>
-</table>
-</details>
+<p>The 1871 census recorded <strong>19</strong> measurements for this Census Subdivision across <strong>4</strong> categories.</p>
+<p><strong>Population & families (1871).</strong> This community's record includes 1,650 total population, 859 males, 791 females, 468 married persons, 294 families, 234 married females, 234 married males, 55 widowed persons, 33 widowed females, 22 widowed males. <em>(Source: 1871 Census of Canada, V1T1.)</em></p>
+<p><strong>Age structure (1871).</strong> This community's record includes 1,127 single persons under 18, 603 single males under 18, 524 single females under 18. <em>(Source: 1871 Census of Canada, V1T1.)</em></p>
+<p><strong>Buildings & housing (1871).</strong> This community's record includes 286 occupied houses, 281 inhabited houses, 11 uninhabited houses, 6 houses under construction, 5 dwellings that are temporary shanties. <em>(Source: 1871 Census of Canada, V1T1.)</em></p>
+<p><strong>Agriculture (1871).</strong> This community's record includes 88,901 total area (acres). <em>(Source: 1871 Census of Canada, V1T1.)</em></p>
 
 <h2>Identifiers</h2>
 <ul>
@@ -156,10 +121,262 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/qc/nouvelle-sho
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Population (1871)",
-      "value": 1650
+      "name": "Total area (acres)",
+      "value": 88901,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ARE_XX_A",
+      "unitText": "acres",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Agriculture",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGR"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total population",
+      "value": 1650,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_XX_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of single persons under 18",
+      "value": 1127,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/AGE_0to17XS_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Age structure",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGE"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of males",
+      "value": 859,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_MX_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of females",
+      "value": 791,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_FX_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of single males under 18",
+      "value": 603,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/AGE_0to17MS_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Age structure",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGE"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of single females under 18",
+      "value": 524,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/AGE_0to17FS_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Age structure",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGE"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of married persons",
+      "value": 468,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_XM_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of families",
+      "value": 294,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_XF_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of occupied houses",
+      "value": 286,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HOUSE_XO_N",
+      "unitText": "buildings",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Buildings & housing",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/BLD"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of inhabited houses",
+      "value": 281,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HOUSE_XI_N",
+      "unitText": "buildings",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Buildings & housing",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/BLD"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of married males",
+      "value": 234,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_MM_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of married females",
+      "value": 234,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_FM_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of widowed persons",
+      "value": 55,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_XW_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of widowed females",
+      "value": 33,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_FW_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of widowed males",
+      "value": 22,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_MW_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Population & families",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of uninhabited houses",
+      "value": 11,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HOUSE_XU_N",
+      "unitText": "buildings",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Buildings & housing",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/BLD"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of houses under construction",
+      "value": 6,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HOUSE_XC_N",
+      "unitText": "buildings",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Buildings & housing",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/BLD"
+      },
+      "citation": "1871 Census of Canada, V1T1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of dwellings that are temporary shanties",
+      "value": 5,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HOUSE_TS_N",
+      "unitText": "buildings",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Buildings & housing",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/BLD"
+      },
+      "citation": "1871 Census of Canada, V1T1"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "Full census measurements (1871)",
+    "description": "All 19 measurements recorded for this Census Subdivision in 1871, in JSONL form. Filter by tcpuid=QC169008 and year=1871 for this subject.",
+    "distribution": {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentUrl": "https://jimclifford.ca/hgiscanada/facts/1871.jsonl"
+    }
+  }
 }
 </script>
 
