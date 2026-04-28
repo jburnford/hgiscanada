@@ -75,6 +75,7 @@
 <p><strong>Buildings & housing (1891).</strong> This community's record includes 100 houses, 100 houses built of wood, 100 houses of 1 story, 100 occupied houses, 31 houses of 6 to 10 rooms, 25 houses of 4 rooms, 24 houses of 5 rooms, 15 houses of 2 rooms, 5 houses of 3 rooms, 4 uninhabited houses. <em>(Source: 1891 Census of Canada, V1T2.)</em></p>
 <p><strong>Agriculture (1891).</strong> This community's record includes 14,545 pounds of homemade butter, 13,998 acres of land in farms, 10,823 acres of farmland in woodland or forest, 7,711 bushels of potatoes, 5,530 bushels of oats, 3,175 acres of improved land in farms, 1,846 acres of farmland in pasture, 1,596 pounds of fine wool produced on farms, 1,329 acres of farmland under crops, 864 chickens, 805 sheep, 796 pounds of coarse wool produced on farms, 597 tons of hay, 580 acres of hay crops, 468 acres of oats, 358 sheep slaughtered or sold, 294 milk cows, 185 other cattle, 150 bushels of barley, 100 occupants of farms, 99 farm occupants who own their land, 82 cattle killed or sold, 80 acres of potatoes, 69 horses aged over 3 years, 62 swine, 61 bushels of spring wheat, 50 persons living on farms between 51 and 100 acres, 48 swine slaughtered or sold, 46 oxen, 44 persons living on farms between 101 and 200 acres, 30 bushels of turnips, 12 acres of barley, 5 acres of wheat, 5 horses aged 3 years and under, 4 geese, 3 persons living on farms under 10 acres, 2 persons living on farms over 200 acres, 1 acres of turnips, 1 farm occupants who rent their land, 1 persons living on farms between 11 and 50 acres, 1 turkeys. <em>(Source: 1891 Census of Canada, V2T16; V4T2; V4T3.)</em></p>
 
+
 <h2>Identifiers</h2>
 <ul>
 <li><strong>TCP UID:</strong> <code>NS043014</code> — year-scoped identifier from the Canadian Census Subdivision boundary file</li>
@@ -273,19 +274,6 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/ns/north-shore-
     },
     {
       "@type": "PropertyValue",
-      "name": "Number of persons who are not French Canadian",
-      "value": 621,
-      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ETH_NFC_N",
-      "unitText": "persons",
-      "valueReference": {
-        "@type": "DefinedTerm",
-        "name": "Ethnic origin",
-        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
-      },
-      "citation": "1891 Census of Canada, V1T3"
-    },
-    {
-      "@type": "PropertyValue",
       "name": "Total population",
       "value": 621,
       "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/POP_XX_N",
@@ -294,6 +282,19 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/ns/north-shore-
         "@type": "DefinedTerm",
         "name": "Population & families",
         "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
+      },
+      "citation": "1891 Census of Canada, V1T3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons who are not French Canadian",
+      "value": 621,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ETH_NFC_N",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
       },
       "citation": "1891 Census of Canada, V1T3"
     },
@@ -481,22 +482,22 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/ns/north-shore-
     },
     {
       "@type": "PropertyValue",
-      "name": "Number of occupants of farms",
-      "value": 100,
-      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/FRM_XX_N",
-      "unitText": "count",
-      "valueReference": {
-        "@type": "DefinedTerm",
-        "name": "Agriculture",
-        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/AGR"
-      },
-      "citation": "1891 Census of Canada, V2T16"
-    },
-    {
-      "@type": "PropertyValue",
       "name": "Number of occupied houses",
       "value": 100,
       "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HOUSE_XO_N",
+      "unitText": "buildings",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Buildings & housing",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/BLD"
+      },
+      "citation": "1891 Census of Canada, V1T2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of houses",
+      "value": 100,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/HOUSE_XX_N",
       "unitText": "buildings",
       "valueReference": {
         "@type": "DefinedTerm",
