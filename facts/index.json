@@ -4,51 +4,51 @@
       "year": 1851,
       "path": "/hgiscanada/facts/1851.jsonl",
       "facts": 146774,
-      "size_bytes": 59009189
+      "size_bytes": 58990759
     },
     {
       "year": 1861,
       "path": "/hgiscanada/facts/1861.jsonl",
       "facts": 160035,
-      "size_bytes": 64192669
+      "size_bytes": 64154883
     },
     {
       "year": 1871,
       "path": "/hgiscanada/facts/1871.jsonl",
       "facts": 36789,
-      "size_bytes": 14329157
+      "size_bytes": 14334906
     },
     {
       "year": 1881,
       "path": "/hgiscanada/facts/1881.jsonl",
       "facts": 71010,
-      "size_bytes": 28088001
+      "size_bytes": 28085845
     },
     {
       "year": 1891,
       "path": "/hgiscanada/facts/1891.jsonl",
       "facts": 194148,
-      "size_bytes": 76814998
+      "size_bytes": 76859039
     },
     {
       "year": 1901,
       "path": "/hgiscanada/facts/1901.jsonl",
       "facts": 37689,
-      "size_bytes": 14378264
+      "size_bytes": 14393153
     },
     {
       "year": 1911,
       "path": "/hgiscanada/facts/1911.jsonl",
-      "facts": 86820,
-      "size_bytes": 34670764
+      "facts": 89724,
+      "size_bytes": 35770070
     },
     {
       "year": 1921,
       "path": "/hgiscanada/facts/1921.jsonl",
       "facts": 122253,
-      "size_bytes": 49638829
+      "size_bytes": 49609841
     }
   ],
-  "total_facts": 855518,
+  "total_facts": 858422,
   "vocab": "/hgiscanada/vocab/variables.jsonl"
 }

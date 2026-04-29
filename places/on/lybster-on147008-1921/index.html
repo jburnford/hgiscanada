@@ -51,7 +51,12 @@
 <h2>Population</h2>
 <p>In 1921, <strong>Lybster</strong> had a population of <strong>427</strong>: 228 male and 199 female residents.</p>
 
-
+<h2>Boundary continuity (non-identical overlaps)</h2>
+<p>Spatial polygon overlaps with adjacent census years where the boundary shifted enough that the SAME_AS chain didn't merge them. These show where the territory came from and went to even when it isn't tracked as the same persistent place.</p>
+<h3>Earlier boundary forms</h3>
+<ul>
+<li>In an earlier year, this CSD was contained in <a href="/hgiscanada/places/on/gillies-lybster-marks-on123018-1911/">Gillies, Lybster &amp; Marks, 1911</a> (31.7% share).</li>
+</ul>
 <h2>Neighbouring Census Subdivisions in 1921</h2>
 <p>In the 1921 census, Lybster shared boundaries with:</p>
 <ul>
@@ -266,6 +271,19 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/on/lybster-on14
     },
     {
       "@type": "PropertyValue",
+      "name": "Number of adherents of other sects (residual category in 1921)",
+      "value": 8,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/OTHER_SECTS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
       "name": "Number of persons of Scandinavian origin",
       "value": 8,
       "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/EUR_SCANDINAVIAN",
@@ -279,9 +297,22 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/on/lybster-on14
     },
     {
       "@type": "PropertyValue",
-      "name": "Number of adherents of other sects (residual category in 1921)",
-      "value": 8,
-      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/OTHER_SECTS",
+      "name": "Number of Presbyterians",
+      "value": 5,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/PRESBYTERIANS",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Religion",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T38"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of Roman Catholics",
+      "value": 5,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ROMAN_CATHOLICS",
       "unitText": "persons",
       "valueReference": {
         "@type": "DefinedTerm",
@@ -315,32 +346,6 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/on/lybster-on14
         "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/POP"
       },
       "citation": "1921 Census of Canada, V1T16"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "Number of Presbyterians",
-      "value": 5,
-      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/PRESBYTERIANS",
-      "unitText": "persons",
-      "valueReference": {
-        "@type": "DefinedTerm",
-        "name": "Religion",
-        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
-      },
-      "citation": "1921 Census of Canada, V1T38"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "Number of Roman Catholics",
-      "value": 5,
-      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/ROMAN_CATHOLICS",
-      "unitText": "persons",
-      "valueReference": {
-        "@type": "DefinedTerm",
-        "name": "Religion",
-        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
-      },
-      "citation": "1921 Census of Canada, V1T38"
     },
     {
       "@type": "PropertyValue",
@@ -396,19 +401,6 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/on/lybster-on14
     },
     {
       "@type": "PropertyValue",
-      "name": "Number of persons of German origin",
-      "value": 1,
-      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/EUR_GERMAN",
-      "unitText": "persons",
-      "valueReference": {
-        "@type": "DefinedTerm",
-        "name": "Ethnic origin",
-        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
-      },
-      "citation": "1921 Census of Canada, V1T27"
-    },
-    {
-      "@type": "PropertyValue",
       "name": "Number of Baptists",
       "value": 1,
       "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/BAPTISTS",
@@ -430,6 +422,19 @@ Retrieved from <a href="https://jimclifford.ca/hgiscanada/places/on/lybster-on14
         "@type": "DefinedTerm",
         "name": "Religion",
         "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/REL"
+      },
+      "citation": "1921 Census of Canada, V1T27"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Number of persons of German origin",
+      "value": 1,
+      "propertyID": "https://jimclifford.ca/hgiscanada/vocab/var/EUR_GERMAN",
+      "unitText": "persons",
+      "valueReference": {
+        "@type": "DefinedTerm",
+        "name": "Ethnic origin",
+        "inDefinedTermSet": "https://jimclifford.ca/hgiscanada/vocab/category/ETH"
       },
       "citation": "1921 Census of Canada, V1T27"
     }
