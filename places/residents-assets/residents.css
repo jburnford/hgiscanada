@@ -21,3 +21,7 @@ footer{margin-top:3em;padding-top:.5em;border-top:1px solid #ddd;
 font-size:.8em;color:#666}
 a{color:#06a}
 .mute{color:#888}
+a.dcb{display:inline-block;font-size:.7em;font-weight:bold;background:#ffa;
+color:#444;text-decoration:none;padding:0 4px;margin-left:4px;
+border-radius:2px;border:1px solid #d8c}
+a.dcb:hover{background:#ff8;color:#000}
